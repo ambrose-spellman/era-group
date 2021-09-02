@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <meta name="description"  content="Международные грузовые перевозки в Бишкеке">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.5.1/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin>
+    <script src="https://unpkg.com/leaflet@1.5.1/dist/leaflet.js" integrity="sha512-GffPMF3RvMeYyc1LWMHtK8EbPv0iNZ8/oTtHPx9/cc2ILxQ+u905qIwdpULaqDkyBKgOaB57QTMg7ztg8Jm2Og==" crossorigin></script>
+    <link href="https://fonts.googleapis.com/css?family=Exo+2:300,400&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700&amp;display=swap&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <title>EraGroup - МЕЖДУНАРОДНЫЕ ГРУЗОВЫЕ ПЕРЕВОЗКИ</title>
+
+</head>
+
+<body>
+    <!--[if lte IE 9]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com">upgrade your browser</a> to improve your experience and security.</p><![endif]-->
+    <header id="header" class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg d-flex justify-content-between">
+                <a class="navbar-brand" href="index-ru.html#"></a><span class="navbar_text-sm d-none d-md-block">Международные<br>Грузовые перевозки в Бишкеке</span>
+                <a class="lng" href="index.html"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse flex-lg-column" id="navbarNavAltMarkup">
+                    <nav class="menu header-sticky">
+                        <a class="menu_link" href="index-ru.html#header">Главная</a>
+                        <a class="menu_link" href="index-ru.html#insurance">Страхование</a>
+                        <a class="menu_link" href="index-ru.html#services">Услуги </a>
+                        <a class="menu_link" href="index-ru.html#autopark">Автопарк</a>
+                        <a class="menu_link" href="index-ru.html#roadmap">Направления</a>
+                        <a class="menu_link" href="index-ru.html#contact">Контакты</a>
+                        <a class="lng-sticky d-none" href="index.html"></a>
+                    </nav>
+                    <div class="navbar-nav justify-content-between">
+                        <div class="col-md-6 col-lg-5 col-xl-4 px-0 navbar-contact"><a class="nav-item nav-link" href="index-ru.html#">+996 555 76 04 60</a><span class="navbar_text-sm">Круглосуточно</span></div>
+                        <div class="col-md-6 col-lg-5 col-xl-4 px-0 navbar-contact"><a class="nav-item nav-link" href="index-ru.html#">+996 312 38 01 88</a><span class="navbar_text-sm">09:00 - 18:00</span></div>
+                        <div class="col-md-6 col-lg-5 col-xl-3 px-0 text-right d-none d-xl-block"><a class="nav-item btn btn-primary" href="index-ru.html#contact_form">Заказать звонок</a></div><span class="address d-lg-none"><small>Кыргызская Республика г.Бишкек ул.Ибраимова д.152 3 эт. Каб.А306</small></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="promo">
+                <h1 class="promo_title">МЕЖДУНАРОДНЫЕ <br><span>ГРУЗОВЫЕ ПЕРЕВОЗКИ </span></h1>
+                <h4 class="promo_title-sm">Компания «ЭРА Групп» предоставляет услуги транспортной экспедиции <br>и логистики в сфере международных перевозок грузов</h4>
+                <div class="promo_items">
+                    <div class="col-md-6 promo_item clock">Персональный <br>менеджер</div>
+                    <div class="col-md-6 promo_item marker">Отслеживание <br>груза</div>
+                    <div class="col-md-6 promo_item check">Страхование <br>груза</div>
+                    <div class="col-md-6 promo_item delivery">Оперативная<br> доставка</div><a class="nav-item btn btn-primary d-block d-xl-none mt-3" href="index-ru.html#contact_form">Заказать звонок</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section id="about">
+        <div class="container">
+            <div class="about">
+                <h3 class="section_title">Давайте знакомиться</h3>
+                <div class="about-row row align-items-center mb-5">
+                    <div class="col-md-6"><img src="img/about-image.png" alt=""></div>
+                    <div class="col-md-6">
+                        <h4 class="about_title">На рынке более 5 лет</h4>
+                        <p class="about_text">Компания «ЭРА Групп» предоставляет услуги транспортной экспедиции и логистики в сфере международных перевозок грузов. Построим наикротчайший и экономный маршрут любой сложности и объема, автомобильным транспортом, железнодорожным
+                            и авиаперевозками. А также таможенное оформление товаров. Компания «ЭРА Групп» всегда ориентируется на индивидуальный подход с высоким качеством к решению Ваших транспортных задач</p>
+                        <p class="about_text">На протяжении 5 лет на рынке транспортных услуг, мы накопили большой опыт, позволяющий нам эффективно решать даже самые сложные задачи, связанные с доставкой грузов в международном сообщении. Мы готовы предложить Вам превосходное
+                            качество и оптимальные цены. Детали нашего взаимодействия мы готовы обсуждать в рамках переговоров, направленных на взаимовыгодное сотрудничество сторон</p>
+                    </div>
+                </div>
+                <div id="insurance" class="about-row2 row align-items-center">
+                    <div class="col-md-6">
+                        <div class="about_img"></div>
+                    </div>
+                    <div class="col-md-6">
+                        <h4 class="about_title">Страхование груза</h4>
+                        <p class="about_text">«ЭРА Групп» заботится о безопасной перевозке грузов. Мы не только бережно транспортируем каждый ваш груз, но и обеспечиваем его надежной страховой защитой</p>
+                        <p class="about_text">Наш партнер - ОАО «Страховая компания «АЮ Гарант» (www.agi.kg) Стоимость услуги «Страхование груза» можете узнать связавшись с нашими специалистами</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about_icons">
+                <div class="about_icon"><span class="f1"></span>
+                    <h5 class="about_icon-text">Страхование</h5>
+                </div>
+                <div class="about_icon"><span class="f2"></span>
+                    <h5 class="about_icon-text">Перевозка </h5>
+                </div>
+                <div class="about_icon"><span class="f3"></span>
+                    <h5 class="about_icon-text">Таможенная очистка</h5>
+                </div>
+                <div class="about_icon"><span class="f4"></span>
+                    <h5 class="about_icon-text">Складски услуги</h5>
+                </div>
+                <div class="about_icon"><span class="f5"></span>
+                    <h5 class="about_icon-text">Сертификация</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="services">
+        <div class="container">
+            <div class="features">
+                <h3 class="section_title">В чем мы лучшие?</h3>
+                <div class="row features_list">
+                    <div class="col-lg-4"><img src="img/fe1.png" alt="">
+                        <h4 class="features_title">Авиаперевозки</h4>
+                        <p class="features_text">Компания "ЭРА Групп" - является надежным партнером предоставляя услуги авиаперевозок, при этом постоянно обеспечивая оперативную и безопасную доставку, полное сопровождение сделки и оптимальные цены, за свои услуги. Мы производим
+                            доставку грузов в страны СНГ, ближнего зарубежья и Китая. Наши специалисты, работая с надежными партнерами, используют оптимальные схемы для быстрой доставки ваших грузов</p><a class="btn btn-outline-danger" href="index-ru.html#contact_form">Консультация</a>
+                    </div>
+                    <div class="col-lg-4"><img src="img/fe2.png" alt="">
+                        <h4 class="features_title">Автоперевозки</h4>
+                        <p class="features_text">За счет современного автопарка мы можем производить грузоперевозки автомобильным транспортом всех существующих типов груза: полные фургоны (FTL), сборные грузы (LTL) и экспресс-доставка грузов. Наличие спецтранспорта дает возможность
+                            перевозить грузы, для которого важны особые температурные режимы, а также опасные грузы (ADR). Доставим груз в любые регионы. Подберем оптимальный маршрут и подходящий транспорт</p><a class="btn btn-outline-danger" href="index-ru.html#contact_form">Консультация</a>
+                    </div>
+                    <div class="col-lg-4"><img src="img/fe3.png" alt="">
+                        <h4 class="features_title">Ж/Д перевозки</h4>
+                        <p class="features_text">Работа нашей компании реализуется надежно и оперативно, поэтому вы легко можете сформировать и укрепить взаимоотношения с партнерами из-за рубежа, к примеру, из Китая. Логисты компании обладают огромнейшим опытом в данной сфере,
+                            что позволяет им разрабатывать оптимальные маршруты следования грузов до пунктов назначения, а организация и координация процесса передвижения грузов полностью находится в ведении экспедиторов</p><a class="btn btn-outline-danger"
+                            href="index-ru.html#contact_form">Консультация</a>
+                    </div>
+                    <div class="col-lg-4"><img src="img/fe4.png" alt="">
+                        <h4 class="features_title">Импорт</h4>
+                        <p class="features_text">
+                            Импорт - это перемещение иностранных товаров, из за границы, на железнодорожной, водной и воздушной пути, для их реализации в государственной границы, без обязательств на возвращение обратно.Мы предоставляем услуги по импорту товара: -страхование -перевозка
+                            -таможенная очистка -складски услуги -сертификация
+                        </p><a class="btn btn-outline-danger" href="index-ru.html#contact_form">Консультация</a>
+                    </div>
+                    <div class="col-lg-4"><img src="img/fe5.png" alt="">
+                        <h4 class="features_title">Экспорт</h4>
+                        <p class="features_text">
+                            Экспорт - вывоз за границу товаров, проданных иностранным покупателям, предназначенных для продажи на иностранных рынках или для переработки в другой стране. Наши услуги по экспорту: -услуги склада и грузчиков -подбор транспортного средства -таможенное
+                            оформление груза -Сертифицирование -страхование -отслеживание
+                        </p><a class="btn btn-outline-danger" href="index-ru.html#contact_form">Консультация</a>
+                    </div>
+                    <div class="col-lg-4"><img src="img/fe6.png" alt="">
+                        <h4 class="features_title">Транзит</h4>
+                        <p class="features_text">
+                            Транзитные перевозки - это прохождения товаров из одной страны в другую через границы третьей страны. Благодаря географическому расположению нашей страны и нашим опытным сотрудникам, мы являемся экспертами в области транзитных перевозок и предоставляем
+                            следующие услуги:-таможенные процедуры связанные с транзитом груза; -сопровождение; -предоставление услуг перегруза; -склады временного хранения
+                        </p><a class="btn btn-outline-danger" href="index-ru.html#contact_form">Консультация</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="autopark">
+        <div class="autopark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <h2 class="section_title">Наш автопарк </h2>
+                        <p class="autopark_text">В своей работе мы используем как собственный автопарк, так и привлекаем для перевозки сторонние транспортные организации. Мы тщательно подходим к выбору партнеров и работаем с теми, кто хорошо зарекомендовал себя на рынке грузоперевозок</p>
+                    </div>
+                    <div class="col-md-6"> <img class="d-lg-none" src="img/slide6.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="roadmap" class="container roadmap_wrapper">
+            <h2 class="section_title">можем доставить</h2>
+            <div class="roadmap"></div>
+            <div class="roadmap_coutries d-lg-none"><span class="country">Страны ЕС</span><span class="country">Грузия</span><span class="country">Турция</span><span class="country">Страны ТС</span><span class="country">Средняя Азия</span><span class="country">Китай</span></div>
+            <div class="form_wrapper">
+                <div class="time-bg">
+                    <h4>Получите бесплатный расчет стоимость перевозки за </h4><span class="minute-n">15 </span><span class="minute-t">минут</span>
+                </div>
+                <div class="form">
+                    <form action="http://eragroup.kg/send.php" method="POST" id="contact_form">
+                        <div class="form_inner">
+                            <h3 class="form_title">Оставьте свой номер и <br>перезвоним вам </h3>
+                            <input type="text" name="name" placeholder="Введите ваше имя">
+                            <input type="text" name="phone" placeholder="Введите ваш номер">
+                            <button class="btn btn-danger">Перезвоните мне</button>
+                            <div class="form_contact"><span>или позвоните, напишите нам:</span><a class="phone" href="index-ru.html#">+996 704 76 04 60</a>
+                                <a class="soc_icon whatsapp" href="index-ru.html#"></a>
+                                <a class="soc_icon telegram" href="index-ru.html#"> </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <div class="container">
+            <div class="contact">
+                <h3 class="contact_title">Приезжайте к нам в офис, все обсудим <br>за чашечкой ароматного кофе</h3>
+                <form class="contact_form">
+                    <h4 class="contact_form-title">Оставьте номер мы с Вами свяжемся</h4>
+                    <input type="text" placeholder="Введите ваш номер">
+                    <button class="btn btn-danger" type="submit">Перезвоните мне</button>
+                </form>
+            </div>
+            <div class="map_wrapper">
+                <div id="map"></div>
+                <div class="contact_list">
+                    <a class="contact_logo" href="index-ru.html#"></a><a class="phone" href="index-ru.html#">+996 <span>312 68 01 18</span></a><a class="phone" href="index-ru.html#">+996 <span>700 00 44 88</span></a><a class="phone phone_whatsapp" href="index-ru.html#">+996 <span>555 76 04 60</span></a><span class="worktime">Режим работы: <small>С 09:00 до 18:00</small></span>
+                    <span class="address">Адрес: <small>Кыргызская Республика г.Бишкек ул.Ибраимова д.152 3 эт. Каб.А306</small></span>
+                    <div class="social text-center">
+                        <a class="soc_icon whatsapp" href="index-ru.html#"></a>
+                        <a class="soc_icon telegram" href="index-ru.html#"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="container">
+        <footer class="footer">
+            <a class="footer_logo" href="index-ru.html"></a>
+            <p class="footer_text">Компания «ЭРА Групп» предоставляет услуги <br>транспортной экспедиции и логистики в сфере<br> международных перевозок грузов</p>
+            <p class="footer_text">©2014-2019 ЭраГрупп Все права защищены.</p><a class="design" href="index-ru.html#">Сделано с любовью <span>idea</span><i>.kg</i></a>
+        </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+        window.ga = function() {
+            ga.q.push(arguments)
+        };
+        ga.q = [];
+        ga.l = +new Date;
+        ga('create', 'UA-XXXXX-Y', 'auto');
+        ga('send', 'pageview');
+    </script>
+    <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+    <script src="js/script.js"></script>
+    <a target="_blank" href="https://api.whatsapp.com/send?phone=996555760460" style="position: fixed; right: 40px; bottom: 40px;"><img border="0" src="img/w2.png" width="50" height="50"></a>
+</body>
+
+
+</html>
